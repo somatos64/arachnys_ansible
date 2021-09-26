@@ -2,6 +2,8 @@
 
 
 - name: run install script
-  shell: "/tmp/sentry/install.sh"
+  shell: "./install.sh"
+  args:
+    chdir: "/opt/sentry"
   environment:
     CI: true

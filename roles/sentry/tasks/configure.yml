@@ -3,7 +3,7 @@
 - name: template config.yml
   ansible.builtin.template:
     src: config.yml.j2
-    dest: /etc/sentry/sentry/config.yml
+    dest: /opt/sentry/sentry/config.yml
     owner: root
     group: root
     mode: '0644'
@@ -11,7 +11,7 @@
 - name: template sentry.conf
   ansible.builtin.template:
     src: sentry.conf.py.j2
-    dest: /etc/sentry/sentry/sentry.conf.py
+    dest: /opt/sentry/sentry/sentry.conf.py
     owner: root
     group: root
     mode: '0644'

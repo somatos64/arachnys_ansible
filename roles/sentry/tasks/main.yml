@@ -9,4 +9,4 @@
 
 - name: Create and start services
   community.docker.docker_compose:
-    project_src: /tmp/sentry
+    project_src: /opt/sentry
