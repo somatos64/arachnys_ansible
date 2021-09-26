@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  connection: local
+  become: yes
+
+  roles:
+    - role: update-packages
+    - role: docker-ce
+    - role: nginx
+    - role: sentry

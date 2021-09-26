@@ -1,0 +1,9 @@
+---
+
+- name: Install nginx
+  apt:
+    name: "{{ item }}"
+    state: latest
+    update_cache: yes
+  loop: [ 'nginx-full']
+

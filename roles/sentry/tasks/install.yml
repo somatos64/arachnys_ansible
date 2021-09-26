@@ -1,0 +1,7 @@
+---
+
+
+- name: run install script
+  shell: "/tmp/sentry/install.sh"
+  environment:
+    CI: true

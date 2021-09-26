@@ -1,0 +1,8 @@
+---
+
+
+- name: clone sentry repository
+  ansible.builtin.git:
+    repo: https://github.com/getsentry/onpremise.git # using http instead of ssh to avoid setting an ssh key
+    dest: /tmp/sentry
+

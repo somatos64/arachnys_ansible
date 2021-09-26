@@ -1,0 +1,27 @@
+---
+
+- name: Template nginx default
+  ansible.builtin.template:
+    src: default.j2
+    dest: /etc/nginx/sites-available/default
+    owner: root
+    group: root
+    mode: '0644'
+
+- name: copy certifcate
+  ansible.builtin.copy:
+    src: cert.crt
+    dest: /etc/nginx/cert.crt
+    mode: '0644'
+    owner: root
+    group: root
+
+- name: copy certificate key
+  ansible.builtin.copy:
+    src: cert.crt
+    dest: /etc/nginx/cert.key
+    mode: '0600'
+    owner: root
+    group: root
+
+    

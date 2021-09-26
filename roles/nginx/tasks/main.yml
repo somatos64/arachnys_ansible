@@ -1,0 +1,10 @@
+---
+
+- include_tasks: install.yml
+- include_tasks: configure.yml
+
+
+- name: Reload service nginx, in all cases
+  ansible.builtin.systemd:
+    name: nginx.service
+    state: reloaded
