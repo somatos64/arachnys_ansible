@@ -18,7 +18,7 @@
 
 - name: copy certificate key
   ansible.builtin.copy:
-    src: cert.crt
+    src: cert.key
     dest: /etc/nginx/cert.key
     mode: '0600'
     owner: root
