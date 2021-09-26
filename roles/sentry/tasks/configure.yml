@@ -8,10 +8,10 @@
     group: root
     mode: '0644'
 
-- name: template sentry.conf
-  ansible.builtin.template:
-    src: sentry.conf.py.j2
-    dest: /opt/sentry/sentry/sentry.conf.py
-    owner: root
-    group: root
-    mode: '0644'
+# - name: template sentry.conf
+#   ansible.builtin.template:
+#     src: sentry.conf.py.j2
+#     dest: /opt/sentry/sentry/sentry.conf.py
+#     owner: root
+#     group: root
+#     mode: '0644'

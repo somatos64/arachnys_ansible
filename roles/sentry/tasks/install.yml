@@ -2,7 +2,7 @@
 
 
 - name: run install script
-  shell: "./install.sh"
+  shell: "./install.sh --no-user-prompt"
   args:
     chdir: "/opt/sentry"
   environment:
